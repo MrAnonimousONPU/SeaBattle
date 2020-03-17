@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cargo-ship--v2.png</file>
+        <file>images/les_cherno-belye_snizu_derevya_mrachnye_krony_tuman_molchanie_60216_1920x1080.jpg</file>
+        <file>images/Reverse.png</file>
+        <file>images/ServerListBackGround.jpg</file>
+    </qresource>
+    <qresource prefix="/boats">
+        <file>images/Boat1.png</file>
+        <file>images/Boat2.png</file>
+        <file>images/Boat3.png</file>
+        <file>images/Boat4.png</file>
+        <file>images/DeadBoat.png</file>
+        <file>images/VBoat2.png</file>
+        <file>images/VBoat3.png</file>
+        <file>images/VBoat4.png</file>
+    </qresource>
+</RCC>
