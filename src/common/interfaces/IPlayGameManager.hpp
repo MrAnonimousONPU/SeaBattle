@@ -11,7 +11,7 @@ struct IPlayGameManager {
 
     virtual ~IPlayGameManager() = default;
 
-    virtual ::Enum::ErrorMessage& shoot(::Structs::Point&) = 0;
+    virtual ::Enum::ErrorMessage shoot(::Structs::Point&) = 0;
     virtual void onReceivedShootResult() = 0;
     virtual ::Structs::Field& getEnemyField() = 0;
 

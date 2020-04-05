@@ -11,7 +11,7 @@ struct IIPCClient {
 
     virtual ~IIPCClient() = default;
 
-    virtual std::vector<std::string> getServerList() = 0;
+    virtual std::vector<std::string>& getServerList() = 0;
     virtual ::Enum::ErrorMessage createServer() = 0;
     virtual ::Enum::ErrorMessage connectToServer() = 0;
 };
