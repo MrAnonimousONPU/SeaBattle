@@ -9,7 +9,7 @@
 
 namespace MockUiClient {
 
-class MockBoatSetUpManager : Interfaces::ISettingManager {
+class MockSettingManager : Interfaces::ISettingManager {
 
     MOCK_METHOD1(::Enum::ErrorMessage, saveNickName, (std::string));
   	MOCK_METHOD0(std::string&, getNickName, ());

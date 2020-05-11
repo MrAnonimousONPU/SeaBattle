@@ -6,7 +6,7 @@
 namespace Structs {
 
 struct Point {
-
+    Point() = default;
     Point(int8_t _x, int8_t _y);
 
     int8_t x;

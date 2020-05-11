@@ -4,15 +4,19 @@
 #include <common/structs/Boat.hpp>
 #include <common/constants/ErrorMessage.hpp>
 
+#include <functional>
+
 namespace Interfaces {
 
 struct IBoatSetUpManager {
 
     virtual ~IBoatSetUpManager() = default;
 
-    virtual ::Enum::ErrorMessage& setUpBoat(::Structs::Boat&) = 0;
+    virtual ::Enum::ErrorMessage& setUpBoat(const ::Structs::Boat&) = 0;
     virtual ::Enum::ErrorMessage& clearField() = 0;
     virtual ::Enum::ErrorMessage& sendRedyToPlay() = 0;
+
+    virtual void subscribeToDrawField(const std::function<void(::Structs::Field&)>) = 0;
 };
 }
 
