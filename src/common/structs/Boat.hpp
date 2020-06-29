@@ -7,6 +7,7 @@
 namespace Structs {
 
 struct Boat {
+    Boat() = default;
     Boat(int8_t _lenght, ::Structs::Point _startPoint, ::Enum::Direction::type _direction);
 
     int8_t length;

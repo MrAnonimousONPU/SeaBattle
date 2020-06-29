@@ -7,7 +7,7 @@
 {
 };
 
-::Enum::ErrorMessage::type Structs::Field::setCellState(::Structs::Point& point, ::Enum::FieldState::type state)
+::Enum::ErrorMessage::type Structs::Field::setCellState(const ::Structs::Point& point, ::Enum::FieldState::type state)
 {
     try {
         m_field[point.x][point.y] = state;
@@ -17,7 +17,7 @@
     }
 };
 
-::Enum::FieldState::type Structs::Field::getCellState(::Structs::Point& point) const
+::Enum::FieldState::type Structs::Field::getCellState(const ::Structs::Point& point) const
 {
     return m_field[point.x][point.y];
 };

@@ -12,16 +12,16 @@ namespace Structs {
 
 class Field {
 public:
+    Field() = default;
     Field(const uint8_t rows = ::Constants::Field::RowCount, const uint8_t columns = ::Constants::Field::ColumnCount);
 
     inline uint8_t rows() const;
     inline uint8_t columns() const;
 
-    ::Enum::FieldState::type getCellState(::Structs::Point& point) const;
-    ::Enum::ErrorMessage::type setCellState(::Structs::Point& point, ::Enum::FieldState::type state);
+    ::Enum::FieldState::type getCellState(const ::Structs::Point& point) const;
+    ::Enum::ErrorMessage::type setCellState(const ::Structs::Point& point, ::Enum::FieldState::type state);
 
 private:
-    
     const uint8_t m_rows;
     const uint8_t m_columns;
 
